@@ -1,12 +1,14 @@
-# parse-server-example
+# parse-server-example-eslint
 
 Example project using the [parse-server](https://github.com/ParsePlatform/parse-server) module on Express.
 
 Read the full Parse Server guide here: https://github.com/ParsePlatform/parse-server/wiki/Parse-Server-Guide
 
+* By applying ESLint, cloud code development efficiency is much better.
+
 ### For Local Development
 
-* Make sure you have at least Node 4.3. `node --version`
+* Make sure you have at least Node 6.4. `node --version`
 * Clone this repo and change directory to it.
 * `npm install`
 * Install mongo locally using http://docs.mongodb.org/master/tutorial/install-mongodb-on-os-x/
@@ -15,6 +17,10 @@ Read the full Parse Server guide here: https://github.com/ParsePlatform/parse-se
 * By default it will use a path of /parse for the API routes.  To change this, or use older client SDKs, run `export PARSE_MOUNT=/1` before launching the server.
 * You now have a database named "dev" that contains your Parse data
 * Install ngrok and you can test with devices
+
+#### ESLint for Cloud Code
+* Check Cloud Code using the ESLint: `npm run lint`
+* It's recommended to use the ESLint plugin provided by the IDE. For example, the Atom editor and the [linter-eslint](https://atom.io/packages/linter-eslint).
 
 ### Getting Started With Heroku + mLab Development
 
