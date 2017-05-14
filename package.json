@@ -15,9 +15,15 @@
     "parse-server": "*"
   },
   "scripts": {
+    "lint": "eslint -c .eslintrc cloud",
     "start": "node index.js"
   },
   "engines": {
-    "node": ">=4.3"
+    "node": ">=6.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0"
   }
 }
